@@ -1,103 +1,104 @@
-import Image from "next/image";
+'use client'
+import React from 'react'
+import { LinkArrow } from './components/Icons'
+import Image from 'next/image'
+import Works from './components/Works'
+import Education from './components/Education'
+import Skills from './components/Skills'
 
-export default function Home() {
+const HomePage = () => {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div className='sm:bg-zinc-50 sm:px-10 dark:sm:bg-zinc-950'>
+      <div className='isolate px-6 pt-14 lg:px-8 bg-white dark:bg-black'>
+        <div className="grid md:grid-cols-2">
+          <div className='flex items-center justify-center'>
+            <Image src="/images/me2.png" width={200} height={200} alt="Ana Luiza Riberio - Ilustarção" loading="eager" className='sm:w-120 w-[70%]' />
+          </div>
+          <div className="mx-auto max-w-2xl md:py-32 sm:py-48 lg:py-56">
+            <div className="text-center">
+              <h1 className="text-left text-5xl font-bold tracking-tight text-balance text-gray-900 dark:text-zinc-100 sm:text-7xl">
+                Ana Luiza Ribeiro </h1> 
+              <p className="mt-1 text-left text-lg font-medium text-pretty text-zinc-950 dark:text-zinc-300 sm:text-xl/8">
+                Graduanda em economia na Universidade Estadual do Rio de Janeiro, sou da baixada fluminense e me especializando na área de ciência de dados.
+              </p>
+              <div className="mt-10 gap-x-6 flex items-center justify-center">
+                <a
+                  href="#about"
+                  className="rounded-md flex bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >
+                  Sobre mim <LinkArrow className='ml-2 w-5' />
+                </a>
+                <a href="mailto:analuizasz.ribeiro@gmail.com" target="_blank" className="text-sm/6 font-semibold dark:text-zinc-100 text-gray-900">
+                  Contato.
+                </a>
+              </div>
+            </div>
+          </div>
+          <div
+            aria-hidden="true"
+            className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+      </div>
+
+      <div id='projects' className='isolate px-6 pt-10 lg:px-8 py-1 sm:py-10 bg-white dark:bg-black flex flex-col items-center justify-center'>
+
+        <div >
+          <div>
+            <h2 className="text-left text-2xl font-bold tracking-tight text-balance text-gray-900 dark:text-zinc-100 sm:text-4xl" >
+              Meus Projetos!
+            </h2>
+          </div>
+          <div className='md:w-[70%] text-left text-pretty text-gray-700 dark:text-zinc-400 font-semibold mt-3'>
+            <p>Ao longo do tempo, trabalhei em vários projetos pequenos, mas esses são os que mais me orgulham. Todos são open-source, então se algum chamar sua atenção, sinta-se à vontade para conferir o código e contribuir com ideias de melhoria.</p>
+          </div>
+          <Works />
+        </div>
+      </div>
+
+      <div id='about' className='isolate px-6 pt-8 lg:px-8 bg-white dark:bg-black flex flex-col items-center justify-center'>
+
+        <div className='grid lg:grid-cols-2 items-stretch'>
+          <div>
+            <div>
+              <h3 className="text-left text-2xl font-bold tracking-tight text-balance text-gray-900 dark:text-zinc-100 sm:text-4xl">
+                Sou Ana Luiza Ribeiro, da Baixada Fluminense, e futura economista.
+              </h3>
+            </div>
+            <div className='lg:w-[100%] text-left text-pretty text-gray-900 dark:text-zinc-400 mt-8'>
+              <p>Sou estudante de Economia na Universidade do Estado do Rio de Janeiro (UERJ). Antes de ingressar em Economia, cursei por um tempo Matemática na Universidade Federal do Rio de Janeiro (UFRJ), onde tive meu primeiro contato com a linguagem de programação Python. Desde então, explorei outras linguagens e ferramentas, que hoje aplico em diversos projetos.</p>
+              <p>Atualmente, trabalho como bolsista/pesquisadora no FGV CERI (Centro de Estudos em Regulação e Infraestrutura), onde venho me aprofundando em conceitos econométricos e estatísticos, com foco em desenvolver habilidades para atuar como cientista de dados.</p>
+            </div>
+          </div>
+          <div className='flex items-center justify-center'>
+            <Image src="../images/pixel.gif" width={450} height={250} alt="robo" loading="eager" className='w-[450px] rounded-4xl rotate-3 my-10' />
+          </div>
+        </div>
+        <Education />
+        <Skills />
+      </div>
+
+
+      <div id='articles' className='isolate px-6 sm:py-0 lg:px-8 bg-white dark:bg-black flex flex-col items-center justify-center'>
+        <div className='my-15'>
+          <div>
+            <h3 className="text-left text-2xl font-bold tracking-tight text-balance text-gray-900 dark:text-zinc-100 sm:text-4xl">
+              Ainda estou me aprimorando e estudando para começar a publicar artigos acadêmicos em breve.
+            </h3>
+          </div>
+          <div className='md:w-[70%] text-left text-pretty text-gray-700 dark:text-zinc-400 mt-3'>
+            <p>Apesar de ainda não haver artigos disponíveis nesta página, estou em processo de aprimoramento acadêmico e estudando continuamente para produzir conteúdos de qualidade. Em breve, pesquisas e aprendizados ao longo da minha formação serão compartilhados aqui. Agradeço pela visita e pelo interesse!</p>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+    </div >
+  )
 }
+
+export default HomePage;
