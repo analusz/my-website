@@ -19,8 +19,15 @@ const Education = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, ease: 'easeOut' }}
                             viewport={{ amount: 0.2 }}>
-                            <p className='font-semibold dark:text-zinc-100'>Universidade Federal do Rio de Janeiro (UFRJ - 2022/2023)</p>
-                            <p className='text-gray-600 dark:text-zinc-400'>Durante meus estudos em matemática na UFRJ, aprofundei significativamente meu raciocínio matemático e estatístico, o que ampliou minha capacidade analítica e de resolução de problemas complexos.</p>
+                            <p className='font-semibold dark:text-zinc-100'>Universidade Estadual do Rio de Janeiro
+                                (UERJ
+                                - 2024/Atual)</p>
+                            <p className='text-gray-600 dark:text-zinc-400'>Na graduação em Ciências Econômicas pela
+                                    UERJ, tenho me dedicado a aprofundar meus conhecimentos em Estatística e Econometria
+                                    — áreas que me permitem transformar dados em evidência. Estudo desde fundamentos de
+                                    análise estatística até modelos econométricos aplicados, com foco em entender
+                                    relações causais, avaliar políticas públicas e interpretar fenômenos econômicos com
+                                    base em dados.</p>
                         </motion.div>
                         <motion.div initial={{ opacity: 0, y: 10 }}
                             whileInView={{ opacity: 1, y: 0 }}

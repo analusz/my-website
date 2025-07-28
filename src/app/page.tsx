@@ -17,9 +17,10 @@ const HomePage = () => {
           <div className="mx-auto max-w-2xl md:py-32 sm:py-48 lg:py-56">
             <div className="text-center">
               <h1 className="text-left text-5xl font-bold tracking-tight text-balance text-gray-900 dark:text-zinc-100 sm:text-7xl">
-                Ana Luiza Ribeiro </h1> 
+                Ana Luiza Ribeiro </h1>
               <p className="mt-1 text-left text-lg font-medium text-pretty text-zinc-950 dark:text-zinc-300 sm:text-xl/8">
-                Graduanda em economia na Universidade Estadual do Rio de Janeiro, sou da baixada fluminense e me especializando na área de ciência de dados.
+                Economista em formação pela UERJ, com interesse em métodos quantitativos e análise de dados
+                aplicados à realidade.
               </p>
               <div className="mt-10 gap-x-6 flex items-center justify-center">
                 <a
@@ -63,7 +64,8 @@ const HomePage = () => {
           <div>
             <div>
               <h3 className="text-left text-2xl font-bold tracking-tight text-balance text-gray-900 dark:text-zinc-100 sm:text-4xl">
-                Sou Ana Luiza Ribeiro, da Baixada Fluminense, e futura economista.
+                Um pouco sobre mim e sobre o caminho que venho trilhando na Economia, com foco em métodos
+                quantitativos, análise de dados e construção de conhecimento com base em evidências.
               </h3>
             </div>
             <div className='lg:w-[100%] text-left text-pretty text-gray-900 dark:text-zinc-400 mt-8'>
